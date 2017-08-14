@@ -7,7 +7,7 @@ def authenticate(config):
 
 	#authenticate with Reddit
 	print("Attempting to authenticate....")
-	reddit = praw.Reddit(client_id='BfFQSyA5YBU6BQ', client_secret='qpNXjEygoorolN5IxUta0Vm9_SE', password='Apple300!', user_agent='testing connection to Reddit', username='thatpinkardguy')
+	reddit = praw.Reddit(client_id=config["client_id"], client_secret=config["client_secret"], username=config["username"],password=config["password"],user_agent=config["user_agent"])
 
 	#print out our user name
 	print("Authenicated!")
@@ -51,3 +51,4 @@ def getConfigData():
 #get_comments(reddit)
 config = getConfigData()
 reddit = authenticate(config)
+getComments(reddit)
