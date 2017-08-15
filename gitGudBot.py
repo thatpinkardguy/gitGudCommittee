@@ -58,9 +58,12 @@ def getComments(reddit):
 	comments = subReddit.comments(limit = commentsLimit)
 
 	#loop through them and print the author's name
-	for comment in comments:
-		print(comment.author)
-
+	if comments.yielded != 0 :
+		for comment in comments:
+			print(comment.author)
+	
+	else:
+		print('query resulted in no comments')
 
 def getConfigData():
 
@@ -85,5 +88,5 @@ config = parseConfig()
 
 #get_comments(reddit)
 #config = getConfigData()
-#reddit = authenticate(config)
-#getComments(reddit)
+reddit = authenticate(config)
+getComments(reddit)
