@@ -65,17 +65,6 @@ def getComments(reddit):
 	else:
 		print('query resulted in no comments')
 
-def getConfigData():
-
-	print('getting configuration data')
-
-	with open('botCredentials.json') as data_file:
-    		data = json.load(data_file)
-	#pprint(data)
-	
-
-	return data
-
 
 def parseConfig():
 	config = ConfigParser.RawConfigParser()
