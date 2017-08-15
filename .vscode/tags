@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+authenticate	../gitGudBot.py	/^def authenticate():$/;"	kind:function	line:5
+get_comments	../gitGudBot.py	/^def get_comments(reddit):$/;"	kind:function	line:16
+gitGudBot.py	../gitGudBot.py	1;"	kind:file	line:1
+praw	../gitGudBot.py	/^import praw$/;"	kind:namespace	line:2
+reddit	../gitGudBot.py	/^reddit = authenticate()$/;"	kind:variable	line:36
