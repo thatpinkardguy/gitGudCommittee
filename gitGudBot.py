@@ -90,4 +90,3 @@ config = parseConfig()
 #config = getConfigData()
 reddit = authenticate(config)
 getComments(reddit)
-#testing commit and push
